@@ -17,7 +17,7 @@ public class MainApplication {
             System.out.println("0: Выход из программы");
 
             int choice = scanner.nextInt(); // переменная для ввода числа, от которого будет выбран метод выбора
-            int input = 0;
+            int input = 0; // начальное значение выбора способа ввода
 
             switch (choice) {
                 case 1:
