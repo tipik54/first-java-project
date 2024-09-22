@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class MainApplication {
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in); //сканер чтобы пользователь выбирал какой метод вызвать и какие значения обретут переменные
+        Scanner scanner = new Scanner(System.in); //сканер для ввода пользователем значений
 
         while (true) {                      //Запуск цикла для проверки каждого задания не запуская программу с нуля
             System.out.println("Выберите операцию:");
