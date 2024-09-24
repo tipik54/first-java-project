@@ -5,13 +5,8 @@ import java.util.Scanner;
 
 public class HW2 {
     public static void main(String[] args) {
-        //Реализуйте метод, принимающий в качестве аргумента целочисленный массив,
-        // суммирующий все элементы, значение которых больше 5, и
-        // печатающий полученную сумму в консоль.
         int[] array = arrayData();
         arraySumElements(array);
-
-
     }
 
     public static int[] arrayData() {
@@ -32,9 +27,7 @@ public class HW2 {
         return array;
     }
 
-
-
-    public static void arraySumElements(int[] array){
+    public static void arraySumElements(int[] array) {
         int sum = 0;
         for (int i = 0; i < array.length; i++) {
             int value = array[i];
@@ -44,6 +37,5 @@ public class HW2 {
         }
         System.out.println("Сумма элементов массив: " + sum);
     }
-
 }
 
