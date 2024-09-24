@@ -4,13 +4,8 @@ import java.util.Scanner;
 
 public class HW2 {
     public static void main(String[] args) {
-        //Реализуйте метод, принимающий в качестве аргументов
-        //целое число и строку, и печатающий в консоль строку указанное количество раз
         int[] array = arrayData();
         output(array);
-
-
-
     }
 
     public static int[] arrayData() {
@@ -30,6 +25,6 @@ public class HW2 {
     public static void output(int[] array) {
         for (int i = 0; i < array.length; i++) {
             System.out.println(array[i]);
-            }
         }
+    }
 }
