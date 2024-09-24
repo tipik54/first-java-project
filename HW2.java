@@ -1,49 +1,35 @@
 package ru.kaznu.ruslan.second.hw;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class HW2 {
     public static void main(String[] args) {
-        //Реализуйте метод, принимающий в качестве аргумента целочисленный массив,
-        // суммирующий все элементы, значение которых больше 5, и
-        // печатающий полученную сумму в консоль.
+        //Реализуйте метод, принимающий в качестве аргументов
+        //целое число и строку, и печатающий в консоль строку указанное количество раз
         int[] array = arrayData();
-        arraySumElements(array);
+        output(array);
+
 
 
     }
 
     public static int[] arrayData() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите размер массива: ");
+        System.out.println("Введите количество печатаний в консоль: ");
         int arrayLength = scanner.nextInt();
-        System.out.println("Массив следующей длины: " + arrayLength);
         int[] array = new int[arrayLength];
-        System.out.println("и имеет вид " + Arrays.toString(array));
 
-        System.out.println("Введите данные массива: ");
+        System.out.println("Введите что печатать: ");
+        int arrayData = scanner.nextInt();
         for (int i = 0; i < arrayLength; i++) {
-            int arrayData = scanner.nextInt();
             array[i] = arrayData;
-            System.out.println("Массив имеет вид " + Arrays.toString(array));
         }
-        System.out.println("Массив заполнен и имеет следующий вид " + Arrays.toString(array));
         return array;
     }
 
-
-
-    public static void arraySumElements(int[] array){
-        int sum = 0;
+    public static void output(int[] array) {
         for (int i = 0; i < array.length; i++) {
-            int value = array[i];
-            if (value > 5) {
-                sum += value;
+            System.out.println(array[i]);
             }
         }
-        System.out.println("Сумма элементов массив: " + sum);
-    }
-
 }
-
