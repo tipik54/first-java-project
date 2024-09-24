@@ -32,6 +32,13 @@ public class HW2 {
     }
 
     public static void increaseByNumber (int[] array) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("На сколько увеличить данные массива?");
+        int increase = scanner.nextInt();
 
+        for (int i = 0; i < array.length; i++) {
+            array[i] += increase;
+        }
+        System.out.println("Вышло: " + Arrays.toString(array));
     }
 }
